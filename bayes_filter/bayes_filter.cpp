@@ -10,7 +10,7 @@ double motionProbability(bool motion, int previous_position, int current_positio
   // Remember to wrap around the vector
 	if (!motion)
 	{
-		return 0.;
+		return 1.;
   }
   else
   {
@@ -66,7 +66,6 @@ double observationProbability(bool observation, int position)
       return 0.9;
     }
   }
-  //cheese
   
   
   // Remove this when you are done
@@ -75,17 +74,27 @@ double observationProbability(bool observation, int position)
 
 void normaliseState(std::vector<double>& state)
 {
+  double sum = 0;
   // Normalise the state variable so that the sum of all the probabilities is equal to 1
-  
-  
-  
+  for (double prob : state)
+  {
+    sum = sum + prob;
+  }
+  for (double& normprob : state)
+  {
+    normprob = normprob / sum;
+  }
 }
 
 void initialiseState(std::vector<double>& state)
 {
   // Fill the state variable with initial probabilities
   // You may need to use a "." in your numbers (e.g. "1.0") so that the result isn't an integer
-  
+  double initprob = 0.05;
+  for (double& cell : state)
+  {
+    cell = initprob;
+  }
   
   
 }
@@ -97,7 +106,17 @@ std::vector<double> updateState(const std::vector<double>& previous_state, bool 
   std::vector<double> state(previous_state.size());
 
   // Motion update
-  
+  //calc probability
+  for (int i = 0; i < previous_state.size(); i++)
+  {
+    int j = i - 1;
+    if (j < 0)
+    {
+      j = j + 20;
+    }
+    double moveprob = previous_state[i] * motionProbability(motion, i, i + 1) + previous_state[j] * motionProbability(motion, j, i + 1);
+    state[i] = moveprob * observationProbability(observation, i);
+  }
   
   
   // Observation update
