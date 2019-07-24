@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <fstream>
 
 using std::cout;
 using std::endl;
@@ -8,19 +9,25 @@ double motionProbability(bool motion, int previous_position, int current_positio
 {
   // Calculate the distance from previous_position to current position
   // Remember to wrap around the vector
+  int dist = current_position - previous_position;
+  if (dist < 0)
+  {
+    dist = dist + 20;
+  }
 	if (!motion)
 	{
-		return 1.;
+    if (dist == 0)
+    {
+      return 1.;
+    }
+    else
+    {
+      return 0.;
+    }
+		
   }
   else
   {
-    int dist = current_position - previous_position;
-
-    if (dist < 0)
-    {
-      dist = dist + 20;
-    }
-
     if (dist == 1)
     {
       return 0.7;
@@ -107,15 +114,24 @@ std::vector<double> updateState(const std::vector<double>& previous_state, bool 
 
   // Motion update
   //calc probability
-  for (int i = 0; i < previous_state.size(); i++)
+  for (int pos = 0; pos < previous_state.size(); pos++)
   {
-    int j = i - 1;
-    if (j < 0)
+    int onestep = pos - 1;
+    if (onestep < 0)
     {
-      j = j + 20;
+      onestep = onestep + 20;
     }
-    double moveprob = previous_state[i] * motionProbability(motion, i, i + 1) + previous_state[j] * motionProbability(motion, j, i + 1);
-    state[i] = moveprob * observationProbability(observation, i);
+    int twostep = onestep - 1;
+    if (twostep < 0)
+    {
+      twostep = twostep + 20;
+    }
+
+    double probstay = previous_state[pos] * motionProbability(motion, pos, pos);
+    double oneprob = previous_state[onestep] * motionProbability(motion, onestep, pos);
+    double twoprob = previous_state[twostep] * motionProbability(motion, twostep, pos);
+    double moveprob = probstay + oneprob + twoprob;
+    state[pos] = moveprob * observationProbability(observation, pos);
   }
   
   
@@ -128,19 +144,21 @@ std::vector<double> updateState(const std::vector<double>& previous_state, bool 
   
   return state;
 }
-
+std::ofstream myfile;
 void printState(const std::vector<double>& state)
 {
+  
+
   cout << "Position:    ";
 
   for (int i = 0; i < (state.size() -1); ++i)
   {
     cout << i << "     ";
-
+    myfile << i << ",";
     if (i < 10)
       cout << " ";
   }
-
+  myfile << "\n";
   cout << (state.size() - 1) << endl;
 
   cout << "Probability: ";
@@ -149,14 +167,19 @@ void printState(const std::vector<double>& state)
   for (auto it = state.begin(); it < (state.end() - 1); ++it)
   {
     cout << *it << " ";
+    myfile << *it << ",";
   }
 
   // Print the last value and a new line
   cout << state.back() << endl;
+  myfile << state.back() << "\n";
+
+
 }
 
 int main()
 {
+  myfile.open("prob.csv");
   // Use fixed precision with 1 digit after the decimal
   cout.precision(1);
   cout << std::fixed;
@@ -279,7 +302,7 @@ int main()
   state = updateState(state, true, false);
   printState(state);
   cout << endl;
-
+  myfile.close();
   return 0;
 
 }
