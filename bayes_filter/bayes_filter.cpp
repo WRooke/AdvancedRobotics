@@ -6,8 +6,9 @@ using std::endl;
 
 double motionProbability(bool motion, int previous_position, int current_position)
 {
+    // Given the motion input and distance, return the probability
+
   // Calculate the distance from previous_position to current position
-  // Remember to wrap around the vector
   int dist = current_position - previous_position;
   if (dist < 0)
   {
@@ -37,14 +38,6 @@ double motionProbability(bool motion, int previous_position, int current_positio
       return 0.3;
     }
   }
-  
-  
-  // Given the motion input and distance, return the probability
-  
-  
-  
-  // Remove this when you are done
-  return 0.;
 }
 
 double observationProbability(bool observation, int position)
@@ -72,16 +65,12 @@ double observationProbability(bool observation, int position)
       return 0.9;
     }
   }
-  
-  
-  // Remove this when you are done
-  return 0.;
 }
 
 void normaliseState(std::vector<double>& state)
 {
+  //To normalise, take sum then divide individual probs by sum
   double sum = 0;
-  // Normalise the state variable so that the sum of all the probabilities is equal to 1
   for (double prob : state)
   {
     sum = sum + prob;
@@ -95,14 +84,19 @@ void normaliseState(std::vector<double>& state)
 void initialiseState(std::vector<double>& state)
 {
   // Fill the state variable with initial probabilities
-  // You may need to use a "." in your numbers (e.g. "1.0") so that the result isn't an integer
-  double initprob = 0.05;
-  for (double& cell : state)
+  
+  //Calc initial probability, given by 1/number of positions  
+  double numpos = 20.;
+  // double initprob = 1./numpos;
+  double initprob = 1.;
+
+  //Assign initial probability
+  for (double& pos : state)
   {
-    cell = initprob;
+    pos = initprob;
   }
-  
-  
+
+  normaliseState(state);
 }
 
 std::vector<double> updateState(const std::vector<double>& previous_state, bool motion, bool observation)
@@ -111,33 +105,43 @@ std::vector<double> updateState(const std::vector<double>& previous_state, bool 
   // All values in state are initialised with 0.
   std::vector<double> state(previous_state.size());
 
-  // Motion update
-  //calc probability
+  //Calc probability of landing in position
+  //For all positions in vector
   for (int pos = 0; pos < previous_state.size(); pos++)
   {
+  	//Origin if step length is one
     int onestep = pos - 1;
+
+    //Wraparound vector
     if (onestep < 0)
     {
       onestep = onestep + 20;
     }
+
+    //Origin if step length is two
     int twostep = onestep - 1;
     if (twostep < 0)
     {
+      //Wraparound vector
       twostep = twostep + 20;
     }
 
+    //Calculate probability of staying in location
     double probstay = previous_state[pos] * motionProbability(motion, pos, pos);
+
+    //Calculate probability of arriving from one step
     double oneprob = previous_state[onestep] * motionProbability(motion, onestep, pos);
+
+    //Calculate probability of arriving from two steps
     double twoprob = previous_state[twostep] * motionProbability(motion, twostep, pos);
+
+    //Sum probabilities
     double moveprob = probstay + oneprob + twoprob;
+
+    //Calculate probability of being in given location once observation is taken into account
     state[pos] = moveprob * observationProbability(observation, pos);
   }
-  
-  
-  // Observation update
-  
-  
-  
+
   // Normalise
   normaliseState(state);
   
@@ -145,15 +149,15 @@ std::vector<double> updateState(const std::vector<double>& previous_state, bool 
 }
 void printState(const std::vector<double>& state)
 {
-  
-
   cout << "Position:    ";
 
   for (int i = 0; i < (state.size() -1); ++i)
   {
     cout << i << "     ";
     if (i < 10)
+    {
       cout << " ";
+    }
   }
   cout << (state.size() - 1) << endl;
 
