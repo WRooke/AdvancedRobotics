@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/bayes_filter/bayes_filter.cpp
+iostream
+-
+vector
+-
+fstream
+-
+
