@@ -254,9 +254,13 @@ void ParticleFilter::initialiseParticles()
   // "map_x_min_", "map_x_max_", "map_y_min_", and "map_y_max_" give you the limits of the map
   // Orientation (theta) should be 0 and 2*Pi
   // You probably need to use a "." in your numbers (e.g. "1.0") when calculating the weights
-
-
-  // YOUR CODE HERE //
+  for(auto& part : particles_)
+  {
+    part.x = randomUniform(map_x_min_,map_x_max_);
+    part.y = randomUniform(map_y_min_,map_y_max_);
+    part.theta = randomUniform(0,2 * M_PI);
+    part.weight = 1. / num_particles_;
+  }
 
 
   // Particles may be initialised in occupied space but the map has thin walls so it should be OK
@@ -272,9 +276,10 @@ void ParticleFilter::initialiseParticles()
 void ParticleFilter::normaliseWeights()
 {
   // Normalise the weights of the particles in "particles_"
-
-
-  // YOUR CODE HERE //
+  for (auto& part : particles_)
+  {
+    part.weight = 1. / num_particles_;
+  }
 
 
 }
@@ -290,7 +295,8 @@ void ParticleFilter::estimatePose()
 
 
   // YOUR CODE HERE //
-
+  //IDEA: Find max and min weight,
+  //Take average of all weights >50% between max and min, use that as estimated pose
 
   // Set the estimated pose message
   estimated_pose_.position.x = estimated_pose_x;
@@ -466,9 +472,13 @@ void ParticleFilter::odomCallback(const nav_msgs::Odometry& odom_msg)
   // Use "randomNormal()" with "motion_distance_noise_stddev_" and "motion_rotation_noise_stddev_" to get random values
   // You will probably need "std::cos()" and "std::sin()", and you should wrap theta with "wrapAngle()" too
 
-
-  // YOUR CODE HERE
-
+  for (auto& part : particles_)
+  {
+    part.theta = part.theta + rotation;
+    part.theta = wrapAngle(part.theta);
+    part.y = part.y + (distance * std::sin(part.theta));
+    part.x = part.x + (distance * std::cos(part.theta));
+  }
 
   // Overwrite the previous odometry message
   prev_odom_msg_ = odom_msg;

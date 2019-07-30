@@ -1,26 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
+Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ae95a/fast"
-make: Warning: File 'Makefile' has modification time 134 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_ae95a.dir/build.make CMakeFiles/cmTC_ae95a.dir/build
-make[1]: Entering directory '/home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_ae95a.dir/flags.make' has modification time 134 s in the future
-Building C object CMakeFiles/cmTC_ae95a.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_ae95a.dir/CheckSymbolExists.c.o   -c /home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_ae95a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae95a.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ae95a.dir/CheckSymbolExists.c.o  -o cmTC_ae95a 
-CMakeFiles/cmTC_ae95a.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_94cd9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_94cd9.dir/build.make CMakeFiles/cmTC_94cd9.dir/build
+make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_94cd9.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_94cd9.dir/CheckSymbolExists.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_94cd9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94cd9.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_94cd9.dir/CheckSymbolExists.c.o  -o cmTC_94cd9 
+CMakeFiles/cmTC_94cd9.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_ae95a.dir/build.make:97: recipe for target 'cmTC_ae95a' failed
-make[1]: *** [cmTC_ae95a] Error 1
-make[1]: Leaving directory '/home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_ae95a/fast' failed
-make: *** [cmTC_ae95a/fast] Error 2
+CMakeFiles/cmTC_94cd9.dir/build.make:97: recipe for target 'cmTC_94cd9' failed
+make[1]: *** [cmTC_94cd9] Error 1
+make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_94cd9/fast' failed
+make: *** [cmTC_94cd9/fast] Error 2
 
-File /home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -36,24 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
+Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_58de9/fast"
-make: Warning: File 'Makefile' has modification time 134 s in the future
-/usr/bin/make -f CMakeFiles/cmTC_58de9.dir/build.make CMakeFiles/cmTC_58de9.dir/build
-make[1]: Entering directory '/home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-make[1]: Warning: File 'CMakeFiles/cmTC_58de9.dir/flags.make' has modification time 134 s in the future
-Building C object CMakeFiles/cmTC_58de9.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_58de9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_58de9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58de9.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_58de9.dir/CheckFunctionExists.c.o  -o cmTC_58de9 -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_e63bf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e63bf.dir/build.make CMakeFiles/cmTC_e63bf.dir/build
+make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e63bf.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e63bf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e63bf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e63bf.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e63bf.dir/CheckFunctionExists.c.o  -o cmTC_e63bf -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_58de9.dir/build.make:97: recipe for target 'cmTC_58de9' failed
-make[1]: *** [cmTC_58de9] Error 1
-make[1]: Leaving directory '/home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_58de9/fast' failed
-make: *** [cmTC_58de9/fast] Error 2
+CMakeFiles/cmTC_e63bf.dir/build.make:97: recipe for target 'cmTC_e63bf' failed
+make[1]: *** [cmTC_e63bf] Error 1
+make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e63bf/fast' failed
+make: *** [cmTC_e63bf/fast] Error 2
 
 
