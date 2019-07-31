@@ -58,7 +58,7 @@ private:
   int num_particles_ = 1000;     // Number of particles
   // int num_particles_ = 200;
   // int num_motion_updates_ = 10;  // Number of motion updates before a sensor update
-  int num_motion_updates_ = 2;
+  int num_motion_updates_ = 2; //DECREASING IMPROVES SPEED OF LOCALISATION
   int num_scan_rays_ = 6;        // (Approximate) number of scan rays to evaluate
   int num_sensing_updates_ = 5;  // Number of sensing updates before resampling
   // int num_sensing_updates_ = 2;
