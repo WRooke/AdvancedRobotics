@@ -474,10 +474,10 @@ void ParticleFilter::odomCallback(const nav_msgs::Odometry& odom_msg)
 
   for (auto& part : particles_)
   {
-    part.theta = part.theta + rotation;
+    part.theta = part.theta + rotation + motion_rotation_noise_stddev_;
     part.theta = wrapAngle(part.theta);
-    part.y = part.y + (distance * std::sin(part.theta));
-    part.x = part.x + (distance * std::cos(part.theta));
+    part.y = part.y + ((distance + motion_distance_noise_stddev_) * std::sin(part.theta));
+    part.x = part.x + ((distance  + motion_distance_noise_stddev_)* std::cos(part.theta));
   }
 
   // Overwrite the previous odometry message
