@@ -55,13 +55,13 @@ public:
 
 private:
   // Parameters
-  int num_particles_ = 1000;     // Number of particles
+  int num_particles_ = 500;     // Number of particles
   // int num_particles_ = 200;
   // int num_motion_updates_ = 10;  // Number of motion updates before a sensor update
-  int num_motion_updates_ = 2; //DECREASING IMPROVES SPEED OF LOCALISATION
-  int num_scan_rays_ = 6;        // (Approximate) number of scan rays to evaluate
-  int num_sensing_updates_ = 5;  // Number of sensing updates before resampling
-  // int num_sensing_updates_ = 2;
+  int num_motion_updates_ = 1; //DECREASING IMPROVES SPEED OF LOCALISATION
+  // int num_scan_rays_ = 6;        // (Approximate) number of scan rays to evaluate
+  int num_scan_rays_ = 10;
+  int num_sensing_updates_ = 3;  // Number of sensing updates before resampling DECREASING IMPROVES ACCURACY OF LOCALISATION, LESS GROUPS OF PARTICLES
   double motion_distance_noise_stddev_ = 0.01;        // Standard deviation of distance noise for motion update
   double motion_rotation_noise_stddev_ = M_PI / 60.;  // Standard deviation of rotation noise for motion update
   double sensing_noise_stddev_ = 0.5;                 // Standard deviation of sensing noise
@@ -302,19 +302,7 @@ void ParticleFilter::estimatePose()
 
 
   // YOUR CODE HERE //
-  //IDEA: Find max and min weight,
-  //Take average of all weights >50% between max and min, use that as estimated pose
-  //SHIT CODE BELOW, using only to validate
-  // double estimated_weight = 0.;
-  // for (auto part : particles_)
-  // {
-  //   if (part.weight > estimated_weight)
-  //   {
-  //     estimated_pose_x = part.x;
-  //     estimated_pose_y = part.y;
-  //     estimated_pose_theta = part.theta;
-  //   }
-  // }
+
   double x_weighted_sum = 0.;
   double y_weighted_sum = 0.;
   double sin_weighted_sum = 0.;
@@ -325,14 +313,14 @@ void ParticleFilter::estimatePose()
   {
     x_weighted_sum += part.x * part.weight;
     y_weighted_sum += part.y * part.weight;
-    sin_weighted_sum += std::sin(part.theta);
-    cos_weighted_sum += std::cos(part.theta);
+    sin_weighted_sum += std::sin(part.theta) * part.weight;
+    cos_weighted_sum += std::cos(part.theta) * part.weight;
     sum_weights += part.weight;
   }
 
   estimated_pose_x = x_weighted_sum / sum_weights;
   estimated_pose_y = y_weighted_sum / sum_weights;
-  estimated_pose_theta = atan2(sin_weighted_sum, cos_weighted_sum);
+  estimated_pose_theta = atan2(sin_weighted_sum, cos_weighted_sum) / sum_weights;
 
 
   // Set the estimated pose message
