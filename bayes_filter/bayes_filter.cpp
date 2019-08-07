@@ -97,7 +97,7 @@ void initialiseState(std::vector<double>& state)
 {
   // Fill the state variable with initial probabilities
   // You may need to use a "." in your numbers (e.g. "1.0") so that the result isn't an integer
-  double initprob = 0.05;
+  double initprob = 1. / 20.;
   for (double& cell : state)
   {
     cell = initprob;
@@ -144,7 +144,6 @@ std::vector<double> updateState(const std::vector<double>& previous_state, bool 
   
   return state;
 }
-std::ofstream myfile;
 void printState(const std::vector<double>& state)
 {
   
@@ -154,11 +153,9 @@ void printState(const std::vector<double>& state)
   for (int i = 0; i < (state.size() -1); ++i)
   {
     cout << i << "     ";
-    myfile << i << ",";
     if (i < 10)
       cout << " ";
   }
-  myfile << "\n";
   cout << (state.size() - 1) << endl;
 
   cout << "Probability: ";
@@ -167,19 +164,16 @@ void printState(const std::vector<double>& state)
   for (auto it = state.begin(); it < (state.end() - 1); ++it)
   {
     cout << *it << " ";
-    myfile << *it << ",";
   }
 
   // Print the last value and a new line
   cout << state.back() << endl;
-  myfile << state.back() << "\n";
 
 
 }
 
 int main()
 {
-  myfile.open("prob.csv");
   // Use fixed precision with 1 digit after the decimal
   cout.precision(1);
   cout << std::fixed;
@@ -302,7 +296,6 @@ int main()
   state = updateState(state, true, false);
   printState(state);
   cout << endl;
-  myfile.close();
   return 0;
 
 }
