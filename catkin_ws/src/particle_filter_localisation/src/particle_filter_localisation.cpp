@@ -56,9 +56,9 @@ public:
 private:
   // Parameters
   //    int num_particles_ = 1000;     // Number of particles
-  int num_particles_ = 500;
+  int num_particles_ = 1000;
   // int num_motion_updates_ = 10;  // Number of motion updates before a sensor update
-  int num_motion_updates_ = 1; //DECREASING IMPROVES SPEED OF LOCALISATION
+  int num_motion_updates_ = 2; //DECREASING IMPROVES SPEED OF LOCALISATION
   // int num_scan_rays_ = 6;        // (Approximate) number of scan rays to evaluate
   int num_scan_rays_ = 10;
   int num_sensing_updates_ = 30;  // Number of sensing updates before resampling DECREASING IMPROVES ACCURACY OF LOCALISATION, LESS GROUPS OF PARTICLES
@@ -320,7 +320,7 @@ void ParticleFilter::estimatePose()
 
   estimated_pose_x = x_weighted_sum / sum_weights;
   estimated_pose_y = y_weighted_sum / sum_weights;
-  estimated_pose_theta = atan2(sin_weighted_sum/sum_weights, cos_weighted_sum/sum_weights);
+  estimated_pose_theta = atan2(sin_weighted_sum / sum_weights, cos_weighted_sum / sum_weights);
 
 
   // Set the estimated pose message
@@ -361,6 +361,7 @@ void ParticleFilter::resampleParticles()
         particles_.push_back(*old_particles_it);
 
         // Add jitter to the particle
+        particles_.back().weight = 1. / num_particles_;
         particles_.back().x += randomNormal(0.02);
         particles_.back().y += randomNormal(0.02);
         particles_.back().theta = wrapAngle(particles_.back().theta + randomNormal(M_PI / 30.));
