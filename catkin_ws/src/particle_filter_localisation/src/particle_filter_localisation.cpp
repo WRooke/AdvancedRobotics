@@ -256,8 +256,10 @@ void ParticleFilter::initialiseParticles()
   // "map_x_min_", "map_x_max_", "map_y_min_", and "map_y_max_" give you the limits of the map
   // Orientation (theta) should be 0 and 2*Pi
   // You probably need to use a "." in your numbers (e.g. "1.0") when calculating the weights
+  // Iterate through particles vector
   for(auto& part : particles_)
   {
+    // Assign random map position, particle angle and equal weight to all particles
     part.x = randomUniform(map_x_min_,map_x_max_);
     part.y = randomUniform(map_y_min_,map_y_max_);
     part.theta = randomUniform(0,2 * M_PI);
@@ -279,10 +281,14 @@ void ParticleFilter::normaliseWeights()
 {
   // Normalise the weights of the particles in "particles_"
   double sum_weights = 0.;
+  
+  // Sum all particle weights
   for (auto part : particles_)
   {
     sum_weights += part.weight;
   }
+
+  // Divide existing weights by sum to ensure sum of weights equals one
   for (auto& part : particles_)
   {
     part.weight /= sum_weights;
@@ -303,23 +309,34 @@ void ParticleFilter::estimatePose()
 
   // YOUR CODE HERE //
 
+  // Weighted sum variables
   double x_weighted_sum = 0.;
   double y_weighted_sum = 0.;
   double sin_weighted_sum = 0.;
   double cos_weighted_sum = 0.;
   double sum_weights = 0.;
   // normaliseWeights();
+
+  // Iterate through all particles
   for (auto part : particles_)
   {
+    // Create weighted sum by multiplying particle position by its weight determined in scanCallback
     x_weighted_sum += part.x * part.weight;
     y_weighted_sum += part.y * part.weight;
+
+    // Decompose particle angle into x and y components, create weighted sum
     sin_weighted_sum += std::sin(part.theta) * part.weight;
     cos_weighted_sum += std::cos(part.theta) * part.weight;
+
+    // Take sum of particle weights
     sum_weights += part.weight;
   }
 
+  // Construct estimated position by dividing weighted sum by the sum of weights
   estimated_pose_x = x_weighted_sum / sum_weights;
   estimated_pose_y = y_weighted_sum / sum_weights;
+
+  // Divide x and y components of angle by sum of weights, use 2 argument arctangent to find corresponding angle
   estimated_pose_theta = atan2(sin_weighted_sum / sum_weights, cos_weighted_sum / sum_weights);
 
 
@@ -498,11 +515,17 @@ void ParticleFilter::odomCallback(const nav_msgs::Odometry& odom_msg)
   // Use "randomNormal()" with "motion_distance_noise_stddev_" and "motion_rotation_noise_stddev_" to get random values
   // You will probably need "std::cos()" and "std::sin()", and you should wrap theta with "wrapAngle()" too
 
+  // Iterate through particles, use reference as particle parameters need to be changed
   for (auto& part : particles_)
   {
+    // Add movement and noise to particles in direction of particle angle
     part.y = part.y + ((distance + randomNormal(motion_distance_noise_stddev_)) * std::sin(part.theta));
     part.x = part.x + ((distance  + randomNormal(motion_distance_noise_stddev_)) * std::cos(part.theta));
+
+    // Add rotation to particle with noise.
     part.theta = part.theta + rotation + randomNormal(motion_rotation_noise_stddev_);
+
+    // Wrap angle to avoid errors
     part.theta = wrapAngle(part.theta);
   }
 
@@ -575,10 +598,13 @@ void ParticleFilter::scanCallback(const sensor_msgs::LaserScan& scan_msg)
       // Multiply the ray likelihood into the "likelihood" variable
       // You will probably need "std::sqrt()", "std::pow()", and "std::exp()"
 
+      // Sensing equation from assignment brief, broken into multiple lines for readability
       double first_term = 1 / (std::sqrt(2 * M_PI * std::pow(sensing_noise_stddev_, 2)));
       double fraction_upper = std::pow(particle_range - scan_range, 2);
       double fraction_lower = 2 * std::pow(sensing_noise_stddev_, 2);
       double second_term = std::exp(-1 * fraction_upper / fraction_lower);
+
+      // Multiply existing likelihood with new likelihood
       likelihood *= first_term * second_term;
       // YOUR CODE HERE
 
