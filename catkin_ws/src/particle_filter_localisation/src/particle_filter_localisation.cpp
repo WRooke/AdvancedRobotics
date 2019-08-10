@@ -541,16 +541,6 @@ void ParticleFilter::odomCallback(const nav_msgs::Odometry& odom_msg)
                                   }),
                    particles_.end());
 
-  // for (auto& part : particles_)
-  // {
-  //   if (part.x > map_x_max_ || part.x < map_x_min_ || part.y > map_y_max_ || part.y < map_y_min_)
-  //   {
-  //     part.x = randomUniform(map_x_min_,map_x_max_);
-  //     part.y = randomUniform(map_y_min_,map_y_max_);
-  //     part.theta = randomUniform(0,2 * M_PI);
-  //     part.weight = 1. / num_particles_;
-  //   }
-  // }
 
   // Normalise particle weights because particles have been deleted
   normaliseWeights();
