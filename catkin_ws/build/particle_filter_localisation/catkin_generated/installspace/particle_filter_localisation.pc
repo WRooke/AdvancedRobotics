@@ -1,8 +1,8 @@
-prefix=/home/12051342/AdvancedRobotics/catkin_ws/install
+prefix=/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/install
 
 Name: particle_filter_localisation
 Description: Description of particle_filter_localisation
 Version: 0.0.1
 Cflags: 
-Libs: -L/home/12051342/AdvancedRobotics/catkin_ws/install/lib 
+Libs: -L/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/install/lib 
 Requires: 

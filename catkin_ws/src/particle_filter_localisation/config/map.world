@@ -88,7 +88,7 @@ define robot position
 robot
 (
   name "robot"
-  pose [ 3 -1 0 -90 ]
+  pose [ 2.7 -1 0 -90 ]
   color "gray"
 )
 

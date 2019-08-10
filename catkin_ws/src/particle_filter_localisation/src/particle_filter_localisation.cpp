@@ -337,7 +337,7 @@ void ParticleFilter::estimatePose()
   estimated_pose_y = y_weighted_sum / sum_weights;
 
   // Divide x and y components of angle by sum of weights, use 2 argument arctangent to find corresponding angle
-  estimated_pose_theta = atan2(sin_weighted_sum / sum_weights, cos_weighted_sum / sum_weights);
+  estimated_pose_theta = wrapAngle(atan2(sin_weighted_sum / sum_weights, cos_weighted_sum / sum_weights));
 
 
   // Set the estimated pose message
@@ -541,6 +541,17 @@ void ParticleFilter::odomCallback(const nav_msgs::Odometry& odom_msg)
                                   }),
                    particles_.end());
 
+  // for (auto& part : particles_)
+  // {
+  //   if (part.x > map_x_max_ || part.x < map_x_min_ || part.y > map_y_max_ || part.y < map_y_min_)
+  //   {
+  //     part.x = randomUniform(map_x_min_,map_x_max_);
+  //     part.y = randomUniform(map_y_min_,map_y_max_);
+  //     part.theta = randomUniform(0,2 * M_PI);
+  //     part.weight = 1. / num_particles_;
+  //   }
+  // }
+
   // Normalise particle weights because particles have been deleted
   normaliseWeights();
 
@@ -584,6 +595,7 @@ void ParticleFilter::scanCallback(const sensor_msgs::LaserScan& scan_msg)
     {
       // The range value from the scan message
       double scan_range = scan_msg.ranges[i];
+      ROS_INFO("Scan range = %f\n", scan_range);
 
       // The angle of the ray in the frame of the robot
       double local_angle = (scan_msg.angle_increment * i) + scan_msg.angle_min;
