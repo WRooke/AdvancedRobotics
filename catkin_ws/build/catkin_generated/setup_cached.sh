@@ -8,3 +8,4 @@
 
 # modified environment variables
 export PWD="/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build"
+export PYTHONPATH="/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
