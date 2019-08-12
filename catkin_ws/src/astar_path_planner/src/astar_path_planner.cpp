@@ -19,9 +19,9 @@ namespace
 {
 double heuristicCost(astar_path_planner::WorldPosition a, astar_path_planner::WorldPosition b)
 {
-  // Return a heuristic cost between two world positions
+  double cost = std::sqrt(std::pow(a.x - b.x, 2) + std::pow(a.y - b.y, 2));
 
-  return 0.;  // YOUR CODE HERE
+  return cost;  // YOUR CODE HERE
 }
 
 void waitForKey()

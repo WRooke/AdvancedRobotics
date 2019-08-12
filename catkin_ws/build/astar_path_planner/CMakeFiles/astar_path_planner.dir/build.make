@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/12051342/AdvancedRobotics/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build
+CMAKE_BINARY_DIR = /home/12051342/AdvancedRobotics/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include astar_path_planner/CMakeFiles/astar_path_planner.dir/depend.make
@@ -58,17 +58,17 @@ include astar_path_planner/CMakeFiles/astar_path_planner.dir/progress.make
 include astar_path_planner/CMakeFiles/astar_path_planner.dir/flags.make
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.o: astar_path_planner/CMakeFiles/astar_path_planner.dir/flags.make
-astar_path_planner/CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.o: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object astar_path_planner/CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.o"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner.cpp
+astar_path_planner/CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.o: /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object astar_path_planner/CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.o"
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.o -c /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner.cpp
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.i"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner.cpp > CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.i
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner.cpp > CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.i
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.s"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner.cpp -o CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.s
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner.cpp -o CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.s
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.o.requires:
 
@@ -82,17 +82,17 @@ astar_path_planner/CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.
 
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.o: astar_path_planner/CMakeFiles/astar_path_planner.dir/flags.make
-astar_path_planner/CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.o: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/occupancy_grid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object astar_path_planner/CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.o"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/occupancy_grid.cpp
+astar_path_planner/CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.o: /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/occupancy_grid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object astar_path_planner/CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.o"
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.o -c /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/occupancy_grid.cpp
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.i"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/occupancy_grid.cpp > CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.i
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/occupancy_grid.cpp > CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.i
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.s"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/occupancy_grid.cpp -o CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.s
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/occupancy_grid.cpp -o CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.s
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.o.requires:
 
@@ -106,17 +106,17 @@ astar_path_planner/CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.o.pr
 
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/node.cpp.o: astar_path_planner/CMakeFiles/astar_path_planner.dir/flags.make
-astar_path_planner/CMakeFiles/astar_path_planner.dir/src/node.cpp.o: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object astar_path_planner/CMakeFiles/astar_path_planner.dir/src/node.cpp.o"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/astar_path_planner.dir/src/node.cpp.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/node.cpp
+astar_path_planner/CMakeFiles/astar_path_planner.dir/src/node.cpp.o: /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object astar_path_planner/CMakeFiles/astar_path_planner.dir/src/node.cpp.o"
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/astar_path_planner.dir/src/node.cpp.o -c /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/node.cpp
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/astar_path_planner.dir/src/node.cpp.i"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/node.cpp > CMakeFiles/astar_path_planner.dir/src/node.cpp.i
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/node.cpp > CMakeFiles/astar_path_planner.dir/src/node.cpp.i
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/astar_path_planner.dir/src/node.cpp.s"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/node.cpp -o CMakeFiles/astar_path_planner.dir/src/node.cpp.s
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/node.cpp -o CMakeFiles/astar_path_planner.dir/src/node.cpp.s
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/node.cpp.o.requires:
 
@@ -130,17 +130,17 @@ astar_path_planner/CMakeFiles/astar_path_planner.dir/src/node.cpp.o.provides.bui
 
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/open_set.cpp.o: astar_path_planner/CMakeFiles/astar_path_planner.dir/flags.make
-astar_path_planner/CMakeFiles/astar_path_planner.dir/src/open_set.cpp.o: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/open_set.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object astar_path_planner/CMakeFiles/astar_path_planner.dir/src/open_set.cpp.o"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/astar_path_planner.dir/src/open_set.cpp.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/open_set.cpp
+astar_path_planner/CMakeFiles/astar_path_planner.dir/src/open_set.cpp.o: /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/open_set.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object astar_path_planner/CMakeFiles/astar_path_planner.dir/src/open_set.cpp.o"
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/astar_path_planner.dir/src/open_set.cpp.o -c /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/open_set.cpp
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/open_set.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/astar_path_planner.dir/src/open_set.cpp.i"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/open_set.cpp > CMakeFiles/astar_path_planner.dir/src/open_set.cpp.i
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/open_set.cpp > CMakeFiles/astar_path_planner.dir/src/open_set.cpp.i
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/open_set.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/astar_path_planner.dir/src/open_set.cpp.s"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/open_set.cpp -o CMakeFiles/astar_path_planner.dir/src/open_set.cpp.s
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/open_set.cpp -o CMakeFiles/astar_path_planner.dir/src/open_set.cpp.s
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/open_set.cpp.o.requires:
 
@@ -154,17 +154,17 @@ astar_path_planner/CMakeFiles/astar_path_planner.dir/src/open_set.cpp.o.provides
 
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.o: astar_path_planner/CMakeFiles/astar_path_planner.dir/flags.make
-astar_path_planner/CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.o: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/closed_set.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object astar_path_planner/CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.o"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/closed_set.cpp
+astar_path_planner/CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.o: /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/closed_set.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object astar_path_planner/CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.o"
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.o -c /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/closed_set.cpp
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.i"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/closed_set.cpp > CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.i
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/closed_set.cpp > CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.i
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.s"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/closed_set.cpp -o CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.s
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/closed_set.cpp -o CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.s
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.o.requires:
 
@@ -178,17 +178,17 @@ astar_path_planner/CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.o.provid
 
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/marker.cpp.o: astar_path_planner/CMakeFiles/astar_path_planner.dir/flags.make
-astar_path_planner/CMakeFiles/astar_path_planner.dir/src/marker.cpp.o: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/marker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object astar_path_planner/CMakeFiles/astar_path_planner.dir/src/marker.cpp.o"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/astar_path_planner.dir/src/marker.cpp.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/marker.cpp
+astar_path_planner/CMakeFiles/astar_path_planner.dir/src/marker.cpp.o: /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/marker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object astar_path_planner/CMakeFiles/astar_path_planner.dir/src/marker.cpp.o"
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/astar_path_planner.dir/src/marker.cpp.o -c /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/marker.cpp
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/marker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/astar_path_planner.dir/src/marker.cpp.i"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/marker.cpp > CMakeFiles/astar_path_planner.dir/src/marker.cpp.i
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/marker.cpp > CMakeFiles/astar_path_planner.dir/src/marker.cpp.i
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/marker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/astar_path_planner.dir/src/marker.cpp.s"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/marker.cpp -o CMakeFiles/astar_path_planner.dir/src/marker.cpp.s
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/marker.cpp -o CMakeFiles/astar_path_planner.dir/src/marker.cpp.s
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/src/marker.cpp.o.requires:
 
@@ -213,79 +213,79 @@ astar_path_planner_OBJECTS = \
 # External object files for target astar_path_planner
 astar_path_planner_EXTERNAL_OBJECTS =
 
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.o
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.o
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/src/node.cpp.o
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/src/open_set.cpp.o
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.o
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/src/marker.cpp.o
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/build.make
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_face.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/libroscpp.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/librosconsole.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/librostime.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/libcpp_common.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
-/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner"
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/astar_path_planner.dir/link.txt --verbose=$(VERBOSE)
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/src/astar_path_planner.cpp.o
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/src/occupancy_grid.cpp.o
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/src/node.cpp.o
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/src/open_set.cpp.o
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/src/closed_set.cpp.o
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/src/marker.cpp.o
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/build.make
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_face.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/libroscpp.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/librosconsole.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/librostime.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /opt/ros/melodic/lib/libcpp_common.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
+/home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner: astar_path_planner/CMakeFiles/astar_path_planner.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/12051342/AdvancedRobotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable /home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner"
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/astar_path_planner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-astar_path_planner/CMakeFiles/astar_path_planner.dir/build: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner
+astar_path_planner/CMakeFiles/astar_path_planner.dir/build: /home/12051342/AdvancedRobotics/catkin_ws/devel/lib/astar_path_planner/astar_path_planner
 
 .PHONY : astar_path_planner/CMakeFiles/astar_path_planner.dir/build
 
@@ -299,10 +299,10 @@ astar_path_planner/CMakeFiles/astar_path_planner.dir/requires: astar_path_planne
 .PHONY : astar_path_planner/CMakeFiles/astar_path_planner.dir/requires
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/clean:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner && $(CMAKE_COMMAND) -P CMakeFiles/astar_path_planner.dir/cmake_clean.cmake
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner && $(CMAKE_COMMAND) -P CMakeFiles/astar_path_planner.dir/cmake_clean.cmake
 .PHONY : astar_path_planner/CMakeFiles/astar_path_planner.dir/clean
 
 astar_path_planner/CMakeFiles/astar_path_planner.dir/depend:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/astar_path_planner/CMakeFiles/astar_path_planner.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/12051342/AdvancedRobotics/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/12051342/AdvancedRobotics/catkin_ws/src /home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner /home/12051342/AdvancedRobotics/catkin_ws/build /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner /home/12051342/AdvancedRobotics/catkin_ws/build/astar_path_planner/CMakeFiles/astar_path_planner.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : astar_path_planner/CMakeFiles/astar_path_planner.dir/depend
 

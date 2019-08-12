@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/srv/PlanPath.srv"
+services_str = "/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/srv/PlanPath.srv"
 pkg_name = "astar_path_planner"
 dependencies_str = ""
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"
