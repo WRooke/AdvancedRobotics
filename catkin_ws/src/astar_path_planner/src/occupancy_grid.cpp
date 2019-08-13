@@ -143,6 +143,35 @@ std::vector<AdjacentCell> OccupancyGrid::getAdjacentCells(int id, bool diagonal_
 
   // YOUR CODE HERE
 
+  GridPosition gridpos;
+  int id;
+  AdjacentCell adjcell;
+
+  if (diagonal_movement == true)
+  {
+    for (int x = grid_position.x - 1; x <= grid_position.x + 1; x++)
+    {
+      for (int y = grid_position.y - 1; y <= grid_position.y + 1; y++)
+      {
+        gridpos.x = x;
+        gridpos.y = y;
+
+        id = getCellId(gridpos);
+
+        if (!isOccupied(id) && !isOutOfBounds(gridpos))
+        {
+          adjcell.id = id;
+
+          adjcell.world_position = getWorldPosition(id);
+
+          if ()
+          adjcell.cost
+        }
+
+      }
+    }
+  }
+
   return adjacent_cells;
 }
 
