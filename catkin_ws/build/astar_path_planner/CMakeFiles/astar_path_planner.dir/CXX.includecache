@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/12051342/AdvancedRobotics/catkin_ws/devel/include/astar_path_planner/PlanPath.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/include/astar_path_planner/PlanPath.h
 ros/service_traits.h
 -
 astar_path_planner/PlanPathRequest.h
@@ -14,7 +14,7 @@ astar_path_planner/PlanPathRequest.h
 astar_path_planner/PlanPathResponse.h
 -
 
-/home/12051342/AdvancedRobotics/catkin_ws/devel/include/astar_path_planner/PlanPathRequest.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/include/astar_path_planner/PlanPathRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/12051342/AdvancedRobotics/catkin_ws/devel/include/astar_path_planner/PlanPathResponse.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/include/astar_path_planner/PlanPathResponse.h
 string
 -
 vector
@@ -46,27 +46,27 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/closed_set.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/closed_set.h
 vector
 -
 astar_path_planner/node.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/astar_path_planner/node.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/astar_path_planner/node.h
 
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/marker.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/marker.h
 ros/ros.h
 -
 visualization_msgs/Marker.h
 -
 astar_path_planner/occupancy_grid.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/astar_path_planner/occupancy_grid.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/astar_path_planner/occupancy_grid.h
 
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/node.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/node.h
 limits
 -
 ostream
 -
 
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/occupancy_grid.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/occupancy_grid.h
 vector
 -
 utility
@@ -78,15 +78,15 @@ opencv2/imgproc.hpp
 nav_msgs/OccupancyGrid.h
 -
 
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/open_set.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/open_set.h
 vector
 -
 ostream
 -
 astar_path_planner/node.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/astar_path_planner/node.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/include/astar_path_planner/astar_path_planner/node.h
 
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner.cpp
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner.cpp
 vector
 -
 iostream
@@ -102,39 +102,39 @@ geometry_msgs/PoseWithCovarianceStamped.h
 visualization_msgs/Marker.h
 -
 astar_path_planner/occupancy_grid.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/occupancy_grid.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/occupancy_grid.h
 astar_path_planner/node.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/node.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/node.h
 astar_path_planner/open_set.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/open_set.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/open_set.h
 astar_path_planner/closed_set.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/closed_set.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/closed_set.h
 astar_path_planner/marker.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/marker.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/marker.h
 astar_path_planner/PlanPath.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/PlanPath.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/PlanPath.h
 
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/closed_set.cpp
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/closed_set.cpp
 astar_path_planner/closed_set.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/closed_set.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/closed_set.h
 algorithm
 -
 
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/marker.cpp
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/marker.cpp
 astar_path_planner/marker.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/marker.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/marker.h
 
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/node.cpp
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/node.cpp
 astar_path_planner/node.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/node.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/node.h
 
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/occupancy_grid.cpp
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/occupancy_grid.cpp
 astar_path_planner/occupancy_grid.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/occupancy_grid.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/occupancy_grid.h
 
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/open_set.cpp
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/open_set.cpp
 astar_path_planner/open_set.h
-/home/12051342/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/open_set.h
+/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/open_set.h
 ros/ros.h
 -
 

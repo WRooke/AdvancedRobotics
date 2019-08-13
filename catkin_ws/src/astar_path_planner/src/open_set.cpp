@@ -18,7 +18,16 @@ Node OpenSet::pop(double heuristic_cost_weight)
   // You need to compare combined costs: the cost of the node + (heuristic cost * weight)
   // Use "heuristic_cost_weight" to calculate the combined cost so it can be modified later
 
+  double current_lowest = nodes_[index].cost + (nodes_[index].heuristic_cost * heuristic_cost_weight);
+
   // YOUR CODE HERE
+  for (int i = 1; i < nodes_.size(); i++)
+  {
+    if (nodes_[index].cost + (nodes_[index].heuristic_cost * heuristic_cost_weight) < current_lowest)
+    {
+      index = i;
+    }
+  }
 
   // YOU DON'T NEED TO MODIFY ANYTHING AFTER THIS LINE
 

@@ -1,8 +1,8 @@
-prefix=/home/12051342/AdvancedRobotics/catkin_ws/install
+prefix=/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/install
 
 Name: astar_path_planner
 Description: Description of astar_path_planner
 Version: 0.0.1
-Cflags: -I/home/12051342/AdvancedRobotics/catkin_ws/install/include
-Libs: -L/home/12051342/AdvancedRobotics/catkin_ws/install/lib 
+Cflags: -I/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/install/include
+Libs: -L/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/install/lib 
 Requires: 
