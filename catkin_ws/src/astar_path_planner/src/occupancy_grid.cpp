@@ -144,7 +144,7 @@ std::vector<AdjacentCell> OccupancyGrid::getAdjacentCells(int id, bool diagonal_
   // YOUR CODE HERE
 
   GridPosition gridpos;
-  int id;
+  int adj_id;
   AdjacentCell adjcell;
 
   if (diagonal_movement == true)
@@ -153,21 +153,24 @@ std::vector<AdjacentCell> OccupancyGrid::getAdjacentCells(int id, bool diagonal_
     {
       for (int y = grid_position.y - 1; y <= grid_position.y + 1; y++)
       {
-        gridpos.x = x;
-        gridpos.y = y;
-
-        id = getCellId(gridpos);
-
-        if (!isOccupied(id) && !isOutOfBounds(gridpos))
+        if (y != grid_position.y && x != grid_position.x)
         {
-          adjcell.id = id;
+          gridpos.x = x;
+          gridpos.y = y;
 
-          adjcell.world_position = getWorldPosition(id);
+          adj_id = getCellId(gridpos);
 
-          if ()
-          adjcell.cost
+          if (!isOccupied(adj_id) && !isOutOfBounds(gridpos))
+          {
+            adjcell.id = adj_id;
+
+            adjcell.world_position = getWorldPosition(adjcell.id);
+
+            adjcell.cost = std::sqrt(std::pow((grid_position.x - gridpos.x) * map_.info.resolution, 2) + std::pow((grid_position.y - gridpos.y) * map_.info.resolution, 2));
+
+            adjacent_cells.push_back(adjcell);
+          }
         }
-
       }
     }
   }
@@ -179,20 +182,21 @@ std::vector<AdjacentCell> OccupancyGrid::getAdjacentCells(int id, bool diagonal_
       gridpos.y = grid_position.y;
       gridpos.x = x;
 
-      id = getCellId(gridpos);
+      adj_id = getCellId(gridpos);
 
-      if (!isOccupied(id) && !isOutOfBounds(gridpos))
+      if (!isOccupied(adj_id) && !isOutOfBounds(gridpos))
         {
-          adjcell.id = id;
+          adjcell.id = adj_id;
 
-          adjcell.world_position = getWorldPosition(id);
+          adjcell.world_position = getWorldPosition(adjcell.id);
 
-          adjcell.cost = 1.;
+          adjcell.cost = map_.info.resolution;
 
           adjacent_cells.push_back(adjcell);
+        }
     }
 
-    for (int y = grid_position.y - 1; x <= grid_position.y + 1; y += 2)
+    for (int y = grid_position.y - 1; y <= grid_position.y + 1; y += 2)
     {
       gridpos.x = grid_position.x;
       gridpos.y = y;
@@ -200,14 +204,15 @@ std::vector<AdjacentCell> OccupancyGrid::getAdjacentCells(int id, bool diagonal_
       id = getCellId(gridpos);
 
       if (!isOccupied(id) && !isOutOfBounds(gridpos))
-        {
-          adjcell.id = id;
+      {
+        adjcell.id = id;
 
-          adjcell.world_position = getWorldPosition(id);
+        adjcell.world_position = getWorldPosition(adjcell.id);
 
-          adjcell.cost = 1.;
+        adjcell.cost = map_.info.resolution;
 
-          adjacent_cells.push_back(adjcell);
+        adjacent_cells.push_back(adjcell);
+      }
     }
 
   }
