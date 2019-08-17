@@ -37,9 +37,13 @@ std::vector<int> ClosedSet::getPath(int start_id, int goal_id)
   // You should also reverse the path before returning it
 
   std::vector<int> path{};
+  // Start at goal
   int current_id = goal_id;
+
+  // If the node is not the starting node, keep iterating
   while (current_id != start_id)
   {
+    // Dearch through nodes for parent of current node, add the id of the parent node to the vector and update the current node to the parent node
     for (auto pathnode : nodes_)
     {
       if (pathnode.id == current_id)
@@ -49,9 +53,11 @@ std::vector<int> ClosedSet::getPath(int start_id, int goal_id)
       }
     }
   }
+
+  // Add starting node to path
   path.push_back(current_id);
 
-  ROS_INFO("Reversing\n");
+  // Reverse path and return
   std::reverse(path.begin(),path.end());
   return path;
 }

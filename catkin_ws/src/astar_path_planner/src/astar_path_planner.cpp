@@ -219,22 +219,31 @@ bool PathPlanner::planPath(astar_path_planner::PlanPath::Request& req, astar_pat
     // YOUR CODE HERE
     Node current_node;
     Node adjacent_node;
+
+    // Pop lowest cost node and push to closed set
     current_node = open_set.pop(req.heuristic_cost_weight);
     closed_set.push(current_node);
+
+    // If node is goal, stop looping
     if (goal_cell.id == current_node.id)
     {
       goal_found = true;
       break;
     }
 
+    // Get and store adjacent cells in vector
     std::vector<AdjacentCell> adj_cells = occupancy_grid_.getAdjacentCells(current_node.id, req.diagonal_movement);
 
+    // Iterate through adjacent cells
     for (auto cell : adj_cells)
     {
+      // Convert cell to node
       adjacent_node.id = cell.id;
       adjacent_node.parent_id = current_node.id;
-      adjacent_node.cost = cell.cost;
+      adjacent_node.cost = cell.cost + current_node.cost;
       adjacent_node.heuristic_cost = heuristicCost(cell.world_position, goal_position_);
+
+      // If cell is on closed set, ignore, otherwise update or add to open set
       if (!closed_set.contains(cell.id))
       {
         if (open_set.contains(cell.id))

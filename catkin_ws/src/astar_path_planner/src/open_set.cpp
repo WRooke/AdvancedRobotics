@@ -8,7 +8,11 @@ void OpenSet::push(const Node& n)
 {
   nodes_.push_back(n);
 }
-
+void waitForKey()
+{
+  ROS_INFO("Paused, press enter to continue...");
+  std::cin.get();
+}
 Node OpenSet::pop(double heuristic_cost_weight)
 {
   int index = 0;
@@ -17,13 +21,16 @@ Node OpenSet::pop(double heuristic_cost_weight)
   // Save the index into "index" and it will be removed from "nodes_" and returned
   // You need to compare combined costs: the cost of the node + (heuristic cost * weight)
   // Use "heuristic_cost_weight" to calculate the combined cost so it can be modified later
-
+  
+  // Initialise current_lowest weight with useful value, should prevent errors
   double current_lowest = nodes_[index].cost + (nodes_[index].heuristic_cost * heuristic_cost_weight);
 
-  // YOUR CODE HERE
+  // Iterate through nodes and calculate total weight
   for (int i = 1; i < nodes_.size(); i++)
   {
     double new_low = nodes_[i].cost + (nodes_[i].heuristic_cost * heuristic_cost_weight);
+
+    // If weight is less than previous lowest, update index of lowest node and new lowest cost
     if (new_low < current_lowest)
     {
       current_lowest = new_low;
@@ -65,12 +72,22 @@ void OpenSet::update(const Node& n)
   // Find node "n" in "nodes_"
   // If the cost of node "n" is less than the cost of the node already in the open set, replace it
 
-  // YOUR CODE HERE
-  for (auto& newnode : nodes_)
+  // Iterate through nodes to find specified node
+  for (auto& oldnode : nodes_)
   {
-    if (n.id == newnode.id && n.cost < newnode.cost)
+    // If node is found and cost is lower, update the new cost
+    // I.e. if node is now easier to get to, reflect that change in cost value
+    if (n.id == oldnode.id)
     {
-      newnode.cost = n.cost;
+      ROS_INFO("Found node in openset\n");
+      if (n.cost < oldnode.cost)
+      {
+        ROS_INFO("Needs updating\n");
+        ROS_INFO("Old cost: %f\n", oldnode.cost);
+        ROS_INFO("New cost: %f\n", n.cost);
+        oldnode.cost = n.cost;
+        waitForKey();
+      }
     }
   }
 

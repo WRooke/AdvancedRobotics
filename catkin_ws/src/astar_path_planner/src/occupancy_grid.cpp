@@ -141,8 +141,6 @@ std::vector<AdjacentCell> OccupancyGrid::getAdjacentCells(int id, bool diagonal_
   // Only return diagonal cells if "diagonal_movement" is true
   // Keep in mind that the distance between diagonal cells is larger than horizontal/vertical cells
 
-  // YOUR CODE HERE
-
   GridPosition gridpos;
   int adj_id;
   AdjacentCell adjcell;
