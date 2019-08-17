@@ -151,13 +151,19 @@ std::vector<AdjacentCell> OccupancyGrid::getAdjacentCells(int id, bool diagonal_
 
   if (diagonal_movement == true)
   {
-    ROS_INFO("Diagonal movement true\n");
+    // ROS_INFO("Diagonal movement true\n");
     for (int x = grid_position.x - 1; x <= grid_position.x + 1; x++)
     {
       for (int y = grid_position.y - 1; y <= grid_position.y + 1; y++)
       {
-        if (y != grid_position.y && x != grid_position.x)
+        ROS_INFO("grid_position.x: %i\n", grid_position.x);
+        ROS_INFO("x: %i\n", x);
+        ROS_INFO("grid_position.y: %i\n", grid_position.y);
+        ROS_INFO("y: %i\n", y);
+        ROS_INFO("Checking for difference\n");
+        if ( !(y == grid_position.y && x == grid_position.x))
         {
+          ROS_INFO("Check passed\n");
           gridpos.x = x;
           gridpos.y = y;
 
@@ -180,21 +186,21 @@ std::vector<AdjacentCell> OccupancyGrid::getAdjacentCells(int id, bool diagonal_
 
   else
   {
-    ROS_INFO("Diagonal movement false \n");
+    // ROS_INFO("Diagonal movement false \n");
     int x = 0;
     int y = 0;
     for (x = grid_position.x - 1; x <= grid_position.x + 1; x += 2)
     {
-      ROS_INFO("First for loop reached\n");
+      // ROS_INFO("First for loop reached\n");
       gridpos.y = grid_position.y;
       gridpos.x = x;
-      ROS_INFO("Grid position x: %i\n", gridpos.x);
-      ROS_INFO("Grid position y: %i\n", gridpos.y);
+      // ROS_INFO("Grid position x: %i\n", gridpos.x);
+      // ROS_INFO("Grid position y: %i\n", gridpos.y);
       adj_id = getCellId(gridpos);
-      ROS_INFO("ID of cell with above coords: %i\n", adj_id);
+      // ROS_INFO("ID of cell with above coords: %i\n", adj_id);
       if (!isOccupied(adj_id) && !isOutOfBounds(gridpos))
         {
-          ROS_INFO("Cell with above ID is not out of bounds or occupied");
+          // ROS_INFO("Cell with above ID is not out of bounds or occupied");
           adjcell.id = adj_id;
 
           adjcell.world_position = getWorldPosition(adjcell.id);
@@ -207,17 +213,17 @@ std::vector<AdjacentCell> OccupancyGrid::getAdjacentCells(int id, bool diagonal_
 
     for (y = grid_position.y - 1; y <= grid_position.y + 1; y += 2)
     {
-      ROS_INFO("Second for loop reached\n");
+      // ROS_INFO("Second for loop reached\n");
       gridpos.x = grid_position.x;
       gridpos.y = y;
-      ROS_INFO("Grid position x: %i\n", gridpos.x);
-      ROS_INFO("Grid position y: %i\n", gridpos.y);
+      // ROS_INFO("Grid position x: %i\n", gridpos.x);
+      // ROS_INFO("Grid position y: %i\n", gridpos.y);
 
       adj_id = getCellId(gridpos);
-      ROS_INFO("ID of cell with above coords: %i\n", adj_id);
+      // ROS_INFO("ID of cell with above coords: %i\n", adj_id);
       if (!isOccupied(adj_id) && !isOutOfBounds(gridpos))
       {
-        ROS_INFO("Cell with above ID is not out of bounds or occupied");
+        // ROS_INFO("Cell with above ID is not out of bounds or occupied");
         adjcell.id = adj_id;
 
         adjcell.world_position = getWorldPosition(adjcell.id);
