@@ -1,6 +1,7 @@
 #include "astar_path_planner/closed_set.h"
 
 #include <algorithm>
+#include <ros/ros.h>
 
 namespace astar_path_planner
 {
@@ -36,9 +37,22 @@ std::vector<int> ClosedSet::getPath(int start_id, int goal_id)
   // You should also reverse the path before returning it
 
   std::vector<int> path{};
+  int current_id = goal_id;
+  while (current_id != start_id)
+  {
+    for (auto pathnode : nodes_)
+    {
+      if (pathnode.id == current_id)
+      {
+        path.push_back(current_id);
+        current_id = pathnode.parent_id;      
+      }
+    }
+  }
+  path.push_back(current_id);
 
-  // YOUR CODE HERE
-
+  ROS_INFO("Reversing\n");
+  std::reverse(path.begin(),path.end());
   return path;
 }
 

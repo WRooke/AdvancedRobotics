@@ -119,6 +119,8 @@ astar_path_planner/closed_set.h
 /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/closed_set.h
 algorithm
 -
+ros/ros.h
+-
 
 /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/marker.cpp
 astar_path_planner/marker.h
