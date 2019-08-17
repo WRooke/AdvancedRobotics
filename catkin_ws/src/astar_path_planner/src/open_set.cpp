@@ -79,14 +79,9 @@ void OpenSet::update(const Node& n)
     // I.e. if node is now easier to get to, reflect that change in cost value
     if (n.id == oldnode.id)
     {
-      ROS_INFO("Found node in openset\n");
       if (n.cost < oldnode.cost)
       {
-        ROS_INFO("Needs updating\n");
-        ROS_INFO("Old cost: %f\n", oldnode.cost);
-        ROS_INFO("New cost: %f\n", n.cost);
         oldnode.cost = n.cost;
-        waitForKey();
       }
     }
   }
