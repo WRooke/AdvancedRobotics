@@ -201,7 +201,6 @@ bool PathPlanner::planPath(astar_path_planner::PlanPath::Request& req, astar_pat
   start_node.heuristic_cost = heuristicCost(start_position_, goal_position_);
 
   open_set.push(start_node);
-
   bool goal_found = false;
 
   while (ros::ok() && !open_set.empty())
@@ -218,6 +217,37 @@ bool PathPlanner::planPath(astar_path_planner::PlanPath::Request& req, astar_pat
     //     If the adjacent cell is not on the closed or open sets, add it to the open set
 
     // YOUR CODE HERE
+    Node current_node;
+    Node adjacent_node;
+    current_node = open_set.pop(req.heuristic_cost_weight);
+    closed_set.push(current_node);
+    if (goal_cell.id == current_node.id)
+    {
+      goal_found = true;
+      break;
+    }
+
+    std::vector<AdjacentCell> adj_cells = occupancy_grid_.getAdjacentCells(current_node.id, req.diagonal_movement);
+
+    for (auto cell : adj_cells)
+    {
+      adjacent_node.id = cell.id;
+      adjacent_node.parent_id = current_node.id;
+      adjacent_node.cost = cell.cost;
+      adjacent_node.heuristic_cost = heuristicCost(cell.world_position, goal_position_);
+      if (!closed_set.contains(cell.id))
+      {
+        if (open_set.contains(cell.id))
+        {
+          open_set.update(adjacent_node);
+        }
+        else
+        {
+          open_set.push(adjacent_node);
+        }
+      }
+    }
+
 
     // YOU DON'T NEED TO MODIFY ANYTHING AFTER THIS LINE
 

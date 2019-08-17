@@ -23,8 +23,10 @@ Node OpenSet::pop(double heuristic_cost_weight)
   // YOUR CODE HERE
   for (int i = 1; i < nodes_.size(); i++)
   {
-    if (nodes_[index].cost + (nodes_[index].heuristic_cost * heuristic_cost_weight) < current_lowest)
+    double new_low = nodes_[i].cost + (nodes_[i].heuristic_cost * heuristic_cost_weight);
+    if (new_low < current_lowest)
     {
+      current_lowest = new_low;
       index = i;
     }
   }
