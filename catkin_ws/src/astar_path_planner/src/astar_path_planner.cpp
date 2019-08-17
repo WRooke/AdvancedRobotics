@@ -218,6 +218,16 @@ bool PathPlanner::planPath(astar_path_planner::PlanPath::Request& req, astar_pat
     //     If the adjacent cell is not on the closed or open sets, add it to the open set
 
     // YOUR CODE HERE
+    for (int id = 500; id < 600; id++)
+    {
+      ROS_INFO("Main cell id: %i \n", id);
+      std::vector<AdjacentCell> adjacent_cells = occupancy_grid_.getAdjacentCells(id, req.diagonal_movement);
+      for (auto cell : adjacent_cells)
+      {
+        ROS_INFO("Adjacent cell id: %i \n", cell.id);
+        ROS_INFO("Adjacent cell cost: %f \n", cell.cost);
+      }
+    }
 
     // YOU DON'T NEED TO MODIFY ANYTHING AFTER THIS LINE
 

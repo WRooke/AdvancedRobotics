@@ -131,6 +131,8 @@ astar_path_planner/node.h
 /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/occupancy_grid.cpp
 astar_path_planner/occupancy_grid.h
 /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/astar_path_planner/occupancy_grid.h
+ros/ros.h
+-
 
 /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/src/astar_path_planner/src/open_set.cpp
 astar_path_planner/open_set.h
