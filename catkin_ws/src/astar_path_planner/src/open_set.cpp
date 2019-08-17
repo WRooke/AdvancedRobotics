@@ -64,6 +64,13 @@ void OpenSet::update(const Node& n)
   // If the cost of node "n" is less than the cost of the node already in the open set, replace it
 
   // YOUR CODE HERE
+  for (auto& newnode : nodes_)
+  {
+    if (n.id == newnode.id && n.cost < newnode.cost)
+    {
+      newnode.cost = n.cost;
+    }
+  }
 
 }
 
