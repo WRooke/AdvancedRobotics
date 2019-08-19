@@ -79,9 +79,10 @@ void OpenSet::update(const Node& n)
     // I.e. if node is now easier to get to, reflect that change in cost value
     if (n.id == oldnode.id)
     {
-      if (n.cost < oldnode.cost)
+      if (n.cost <= oldnode.cost)
       {
-        oldnode.cost = n.cost;
+        // oldnode.cost = n.cost;
+        oldnode = n;
       }
     }
   }
