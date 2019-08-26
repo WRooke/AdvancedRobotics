@@ -3,5 +3,5 @@ Try various start and goal positions, and various weight values.
 
 ANSWER HERE:
 
-
-
+If the heuristic cost weight is higher than 1, the closed set tracks towards the goal faster in proportion to the value of the weight. For example, if the weight is 100, it will pursue the goal much more aggressively and in a straighter line than if the weight was 2.
+At excessively high weights, the planner stops planning an optimal path, instead preferring a direct line to the goal, regardless of obstacles. In this case, the planner will "go the long way" around obstacles as it has drawn a direct line to the goal initially.
