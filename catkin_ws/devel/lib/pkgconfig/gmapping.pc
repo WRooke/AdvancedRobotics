@@ -1,0 +1,8 @@
+prefix=/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel
+
+Name: gmapping
+Description: Description of gmapping
+Version: 1.4.0
+Cflags: 
+Libs: -L/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/devel/lib 
+Requires: 

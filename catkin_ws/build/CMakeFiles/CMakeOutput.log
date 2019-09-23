@@ -1,4 +1,4 @@
-The system is: Linux - 5.0.0-23-generic - x86_64
+The system is: Linux - 5.0.0-25-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/will/Documents/UNI/2019/
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3d7b9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3d7b9.dir/build.make CMakeFiles/cmTC_3d7b9.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c0755/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c0755.dir/build.make CMakeFiles/cmTC_c0755.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3d7b9.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_3d7b9.dir/testCCompiler.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_3d7b9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d7b9.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_3d7b9.dir/testCCompiler.c.o  -o cmTC_3d7b9 
+Building C object CMakeFiles/cmTC_c0755.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c0755.dir/testCCompiler.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_c0755
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0755.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c0755.dir/testCCompiler.c.o  -o cmTC_c0755 
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4b0a4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4b0a4.dir/build.make CMakeFiles/cmTC_4b0a4.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_2cbde/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2cbde.dir/build.make CMakeFiles/cmTC_2cbde.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4b0a4.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_4b0a4.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_4b0a4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b0a4.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_4b0a4.dir/CMakeCCompilerABI.c.o  -o cmTC_4b0a4 
+Building C object CMakeFiles/cmTC_2cbde.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2cbde.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_2cbde
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2cbde.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_2cbde.dir/CMakeCCompilerABI.c.o  -o cmTC_2cbde 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -61,9 +61,9 @@ Thread model: posix
 gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4b0a4' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccld7qG3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4b0a4 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_4b0a4.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4b0a4' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2cbde' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cctWqeec.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2cbde /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_2cbde.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2cbde' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -71,14 +71,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_4b0a4/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_4b0a4.dir/build.make CMakeFiles/cmTC_4b0a4.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_2cbde/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_2cbde.dir/build.make CMakeFiles/cmTC_2cbde.dir/build]
   ignore line: [make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_4b0a4.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_4b0a4.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_4b0a4]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b0a4.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_4b0a4.dir/CMakeCCompilerABI.c.o  -o cmTC_4b0a4 ]
+  ignore line: [Building C object CMakeFiles/cmTC_2cbde.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_2cbde.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_2cbde]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2cbde.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_2cbde.dir/CMakeCCompilerABI.c.o  -o cmTC_2cbde ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -90,13 +90,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4b0a4' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccld7qG3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4b0a4 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_4b0a4.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2cbde' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cctWqeec.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2cbde /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_2cbde.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccld7qG3.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cctWqeec.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -116,7 +116,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_4b0a4] ==> ignore
+    arg [cmTC_2cbde] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -128,7 +128,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_4b0a4.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_2cbde.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -160,14 +160,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2ae27/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2ae27.dir/build.make CMakeFiles/cmTC_2ae27.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1ba60/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1ba60.dir/build.make CMakeFiles/cmTC_1ba60.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2ae27.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_2ae27.dir/feature_tests.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_2ae27
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ae27.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2ae27.dir/feature_tests.c.o  -o cmTC_2ae27 
+Building C object CMakeFiles/cmTC_1ba60.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_1ba60.dir/feature_tests.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_1ba60
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ba60.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1ba60.dir/feature_tests.c.o  -o cmTC_1ba60 
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -180,14 +180,14 @@ make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotic
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4b7b1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4b7b1.dir/build.make CMakeFiles/cmTC_4b7b1.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_74c1c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_74c1c.dir/build.make CMakeFiles/cmTC_74c1c.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4b7b1.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_4b7b1.dir/feature_tests.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_4b7b1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b7b1.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4b7b1.dir/feature_tests.c.o  -o cmTC_4b7b1 
+Building C object CMakeFiles/cmTC_74c1c.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_74c1c.dir/feature_tests.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_74c1c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74c1c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_74c1c.dir/feature_tests.c.o  -o cmTC_74c1c 
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -200,14 +200,14 @@ make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotic
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_bb2c4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_bb2c4.dir/build.make CMakeFiles/cmTC_bb2c4.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b8b78/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b8b78.dir/build.make CMakeFiles/cmTC_b8b78.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bb2c4.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_bb2c4.dir/feature_tests.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_bb2c4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb2c4.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bb2c4.dir/feature_tests.c.o  -o cmTC_bb2c4 
+Building C object CMakeFiles/cmTC_b8b78.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_b8b78.dir/feature_tests.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b8b78
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8b78.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b8b78.dir/feature_tests.c.o  -o cmTC_b8b78 
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -218,28 +218,28 @@ make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotic
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3c609/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3c609.dir/build.make CMakeFiles/cmTC_3c609.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_227a8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_227a8.dir/build.make CMakeFiles/cmTC_227a8.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3c609.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_3c609.dir/testCXXCompiler.cxx.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_3c609
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c609.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_3c609.dir/testCXXCompiler.cxx.o  -o cmTC_3c609 
+Building CXX object CMakeFiles/cmTC_227a8.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_227a8.dir/testCXXCompiler.cxx.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_227a8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_227a8.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_227a8.dir/testCXXCompiler.cxx.o  -o cmTC_227a8 
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_64c8d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_64c8d.dir/build.make CMakeFiles/cmTC_64c8d.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e8f2f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e8f2f.dir/build.make CMakeFiles/cmTC_e8f2f.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_64c8d.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_64c8d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_64c8d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64c8d.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_64c8d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_64c8d 
+Building CXX object CMakeFiles/cmTC_e8f2f.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_e8f2f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_e8f2f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8f2f.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_e8f2f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e8f2f 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -251,9 +251,9 @@ Thread model: posix
 gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_64c8d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpAOLag.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_64c8d /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_64c8d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_64c8d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e8f2f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cclymHBz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e8f2f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_e8f2f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e8f2f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -261,14 +261,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_64c8d/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_64c8d.dir/build.make CMakeFiles/cmTC_64c8d.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_e8f2f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_e8f2f.dir/build.make CMakeFiles/cmTC_e8f2f.dir/build]
   ignore line: [make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_64c8d.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_64c8d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_64c8d]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64c8d.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_64c8d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_64c8d ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_e8f2f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_e8f2f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_e8f2f]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8f2f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_e8f2f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e8f2f ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -280,13 +280,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_64c8d' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpAOLag.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_64c8d /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_64c8d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_e8f2f' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cclymHBz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e8f2f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_e8f2f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccpAOLag.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cclymHBz.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -306,7 +306,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_64c8d] ==> ignore
+    arg [cmTC_e8f2f] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -318,7 +318,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_64c8d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_e8f2f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -346,14 +346,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5e648/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5e648.dir/build.make CMakeFiles/cmTC_5e648.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_4a0bc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4a0bc.dir/build.make CMakeFiles/cmTC_4a0bc.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5e648.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_5e648.dir/feature_tests.cxx.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5e648
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e648.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_5e648.dir/feature_tests.cxx.o  -o cmTC_5e648 
+Building CXX object CMakeFiles/cmTC_4a0bc.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_4a0bc.dir/feature_tests.cxx.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_4a0bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a0bc.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_4a0bc.dir/feature_tests.cxx.o  -o cmTC_4a0bc 
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -419,14 +419,14 @@ make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotic
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1aa0f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1aa0f.dir/build.make CMakeFiles/cmTC_1aa0f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_cee99/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cee99.dir/build.make CMakeFiles/cmTC_cee99.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1aa0f.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_1aa0f.dir/feature_tests.cxx.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_1aa0f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1aa0f.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_1aa0f.dir/feature_tests.cxx.o  -o cmTC_1aa0f 
+Building CXX object CMakeFiles/cmTC_cee99.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_cee99.dir/feature_tests.cxx.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_cee99
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cee99.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_cee99.dir/feature_tests.cxx.o  -o cmTC_cee99 
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -492,14 +492,14 @@ make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotic
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2b6a7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2b6a7.dir/build.make CMakeFiles/cmTC_2b6a7.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_2e341/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2e341.dir/build.make CMakeFiles/cmTC_2e341.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2b6a7.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_2b6a7.dir/feature_tests.cxx.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_2b6a7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b6a7.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_2b6a7.dir/feature_tests.cxx.o  -o cmTC_2b6a7 
+Building CXX object CMakeFiles/cmTC_2e341.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_2e341.dir/feature_tests.cxx.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_2e341
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e341.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_2e341.dir/feature_tests.cxx.o  -o cmTC_2e341 
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -565,14 +565,14 @@ make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotic
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_243d4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_243d4.dir/build.make CMakeFiles/cmTC_243d4.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_d8bf4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d8bf4.dir/build.make CMakeFiles/cmTC_d8bf4.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_243d4.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_243d4.dir/feature_tests.cxx.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_243d4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_243d4.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_243d4.dir/feature_tests.cxx.o  -o cmTC_243d4 
+Building CXX object CMakeFiles/cmTC_d8bf4.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_d8bf4.dir/feature_tests.cxx.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_d8bf4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8bf4.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_d8bf4.dir/feature_tests.cxx.o  -o cmTC_d8bf4 
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
@@ -636,28 +636,84 @@ make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotic
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9ac9e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9ac9e.dir/build.make CMakeFiles/cmTC_9ac9e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_64581/fast"
+/usr/bin/make -f CMakeFiles/cmTC_64581.dir/build.make CMakeFiles/cmTC_64581.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9ac9e.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_9ac9e.dir/CheckIncludeFile.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_9ac9e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ac9e.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_9ac9e.dir/CheckIncludeFile.c.o  -o cmTC_9ac9e 
+Building C object CMakeFiles/cmTC_64581.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_64581.dir/CheckIncludeFile.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_64581
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64581.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_64581.dir/CheckIncludeFile.c.o  -o cmTC_64581 
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e1556/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e1556.dir/build.make CMakeFiles/cmTC_e1556.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6df99/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6df99.dir/build.make CMakeFiles/cmTC_6df99.dir/build
 make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e1556.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e1556.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_e1556
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1556.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e1556.dir/CheckFunctionExists.c.o  -o cmTC_e1556 -lpthread 
+Building C object CMakeFiles/cmTC_6df99.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_6df99.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6df99
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6df99.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_6df99.dir/CheckFunctionExists.c.o  -o cmTC_6df99 -lpthread 
+make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1425a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1425a.dir/build.make CMakeFiles/cmTC_1425a.dir/build
+make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1425a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1425a.dir/CheckIncludeFile.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1425a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1425a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1425a.dir/CheckIncludeFile.c.o  -o cmTC_1425a 
+make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the drand48 exist passed with the following output:
+Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dadda/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dadda.dir/build.make CMakeFiles/cmTC_dadda.dir/build
+make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dadda.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_dadda.dir/CheckSymbolExists.c.o   -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_dadda
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dadda.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dadda.dir/CheckSymbolExists.c.o  -o cmTC_dadda 
+make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+File /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef drand48
+  return ((int*)(&drand48))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file FL/Fl.H exists passed with the following output:
+Change Dir: /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f015f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f015f.dir/build.make CMakeFiles/cmTC_f015f.dir/build
+make[1]: Entering directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f015f.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_f015f.dir/CheckIncludeFile.cxx.o -c /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_f015f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f015f.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_f015f.dir/CheckIncludeFile.cxx.o  -o cmTC_f015f 
 make[1]: Leaving directory '/home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 

@@ -101,6 +101,17 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -123,17 +134,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -198,124 +198,94 @@ astar_path_planner_gennodejs/fast:
 .PHONY : astar_path_planner_gennodejs/fast
 
 # Convenience name for target.
-astar_path_planner/CMakeFiles/astar_path_planner_geneus.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_geneus.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/astar_path_planner_geneus.dir/rule
+astar_path_planner/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-astar_path_planner_geneus: astar_path_planner/CMakeFiles/astar_path_planner_geneus.dir/rule
+nav_msgs_generate_messages_lisp: astar_path_planner/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 
-.PHONY : astar_path_planner_geneus
+.PHONY : nav_msgs_generate_messages_lisp
 
 # fast build rule for target.
-astar_path_planner_geneus/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_geneus.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_geneus.dir/build
-.PHONY : astar_path_planner_geneus/fast
+nav_msgs_generate_messages_lisp/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make astar_path_planner/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+.PHONY : nav_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-astar_path_planner/CMakeFiles/astar_path_planner_gencpp.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_gencpp.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/astar_path_planner_gencpp.dir/rule
+astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-astar_path_planner_gencpp: astar_path_planner/CMakeFiles/astar_path_planner_gencpp.dir/rule
+roscpp_generate_messages_lisp: astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
-.PHONY : astar_path_planner_gencpp
+.PHONY : roscpp_generate_messages_lisp
 
 # fast build rule for target.
-astar_path_planner_gencpp/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_gencpp.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_gencpp.dir/build
-.PHONY : astar_path_planner_gencpp/fast
+roscpp_generate_messages_lisp/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
-astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_cpp.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_cpp.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_cpp.dir/rule
+astar_path_planner/CMakeFiles/astar_path_planner_genlisp.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_genlisp.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/astar_path_planner_genlisp.dir/rule
 
 # Convenience name for target.
-astar_path_planner_generate_messages_cpp: astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_cpp.dir/rule
+astar_path_planner_genlisp: astar_path_planner/CMakeFiles/astar_path_planner_genlisp.dir/rule
 
-.PHONY : astar_path_planner_generate_messages_cpp
+.PHONY : astar_path_planner_genlisp
 
 # fast build rule for target.
-astar_path_planner_generate_messages_cpp/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_cpp.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_cpp.dir/build
-.PHONY : astar_path_planner_generate_messages_cpp/fast
+astar_path_planner_genlisp/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_genlisp.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_genlisp.dir/build
+.PHONY : astar_path_planner_genlisp/fast
 
 # Convenience name for target.
-astar_path_planner/CMakeFiles/_astar_path_planner_generate_messages_check_deps_PlanPath.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/_astar_path_planner_generate_messages_check_deps_PlanPath.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/_astar_path_planner_generate_messages_check_deps_PlanPath.dir/rule
+astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-_astar_path_planner_generate_messages_check_deps_PlanPath: astar_path_planner/CMakeFiles/_astar_path_planner_generate_messages_check_deps_PlanPath.dir/rule
+geometry_msgs_generate_messages_nodejs: astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : _astar_path_planner_generate_messages_check_deps_PlanPath
+.PHONY : geometry_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-_astar_path_planner_generate_messages_check_deps_PlanPath/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/_astar_path_planner_generate_messages_check_deps_PlanPath.dir/build.make astar_path_planner/CMakeFiles/_astar_path_planner_generate_messages_check_deps_PlanPath.dir/build
-.PHONY : _astar_path_planner_generate_messages_check_deps_PlanPath/fast
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-astar_path_planner/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_nodejs.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_nodejs.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: astar_path_planner/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+astar_path_planner_generate_messages_nodejs: astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_nodejs.dir/rule
 
-.PHONY : std_msgs_generate_messages_py
+.PHONY : astar_path_planner_generate_messages_nodejs
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/std_msgs_generate_messages_py.dir/build.make astar_path_planner/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
+astar_path_planner_generate_messages_nodejs/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_nodejs.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_nodejs.dir/build
+.PHONY : astar_path_planner_generate_messages_nodejs/fast
 
 # Convenience name for target.
-astar_path_planner/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+astar_path_planner/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-nav_msgs_generate_messages_py: astar_path_planner/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+nav_msgs_generate_messages_eus: astar_path_planner/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 
-.PHONY : nav_msgs_generate_messages_py
+.PHONY : nav_msgs_generate_messages_eus
 
 # fast build rule for target.
-nav_msgs_generate_messages_py/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make astar_path_planner/CMakeFiles/nav_msgs_generate_messages_py.dir/build
-.PHONY : nav_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-astar_path_planner/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: astar_path_planner/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make astar_path_planner/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-astar_path_planner/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: astar_path_planner/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make astar_path_planner/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
+nav_msgs_generate_messages_eus/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make astar_path_planner/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+.PHONY : nav_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
@@ -408,6 +378,36 @@ rosgraph_msgs_generate_messages_lisp/fast:
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+astar_path_planner/CMakeFiles/_astar_path_planner_generate_messages_check_deps_PlanPath.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/_astar_path_planner_generate_messages_check_deps_PlanPath.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/_astar_path_planner_generate_messages_check_deps_PlanPath.dir/rule
+
+# Convenience name for target.
+_astar_path_planner_generate_messages_check_deps_PlanPath: astar_path_planner/CMakeFiles/_astar_path_planner_generate_messages_check_deps_PlanPath.dir/rule
+
+.PHONY : _astar_path_planner_generate_messages_check_deps_PlanPath
+
+# fast build rule for target.
+_astar_path_planner_generate_messages_check_deps_PlanPath/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/_astar_path_planner_generate_messages_check_deps_PlanPath.dir/build.make astar_path_planner/CMakeFiles/_astar_path_planner_generate_messages_check_deps_PlanPath.dir/build
+.PHONY : _astar_path_planner_generate_messages_check_deps_PlanPath/fast
+
+# Convenience name for target.
+astar_path_planner/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_py: astar_path_planner/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+.PHONY : nav_msgs_generate_messages_py
+
+# fast build rule for target.
+nav_msgs_generate_messages_py/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make astar_path_planner/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+.PHONY : nav_msgs_generate_messages_py/fast
+
+# Convenience name for target.
 astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
 	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
@@ -483,21 +483,6 @@ roscpp_generate_messages_cpp/fast:
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
-astar_path_planner/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: astar_path_planner/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make astar_path_planner/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
 astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
 	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
@@ -511,66 +496,6 @@ rosgraph_msgs_generate_messages_cpp: astar_path_planner/CMakeFiles/rosgraph_msgs
 rosgraph_msgs_generate_messages_cpp/fast:
 	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make astar_path_planner/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make astar_path_planner/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-astar_path_planner/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_lisp: astar_path_planner/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_lisp
-
-# fast build rule for target.
-nav_msgs_generate_messages_lisp/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make astar_path_planner/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
-.PHONY : nav_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-astar_path_planner/CMakeFiles/astar_path_planner_genlisp.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_genlisp.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/astar_path_planner_genlisp.dir/rule
-
-# Convenience name for target.
-astar_path_planner_genlisp: astar_path_planner/CMakeFiles/astar_path_planner_genlisp.dir/rule
-
-.PHONY : astar_path_planner_genlisp
-
-# fast build rule for target.
-astar_path_planner_genlisp/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_genlisp.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_genlisp.dir/build
-.PHONY : astar_path_planner_genlisp/fast
-
-# Convenience name for target.
-astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 astar_path_planner/CMakeFiles/roscpp_generate_messages_py.dir/rule:
@@ -633,49 +558,19 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_nodejs.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_nodejs.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_nodejs.dir/rule
+astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-astar_path_planner_generate_messages_nodejs: astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_nodejs.dir/rule
+visualization_msgs_generate_messages_nodejs: astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : astar_path_planner_generate_messages_nodejs
+.PHONY : visualization_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-astar_path_planner_generate_messages_nodejs/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_nodejs.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_nodejs.dir/build
-.PHONY : astar_path_planner_generate_messages_nodejs/fast
-
-# Convenience name for target.
-astar_path_planner/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_eus: astar_path_planner/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
-
-.PHONY : nav_msgs_generate_messages_eus
-
-# fast build rule for target.
-nav_msgs_generate_messages_eus/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make astar_path_planner/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
-.PHONY : nav_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-astar_path_planner/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: astar_path_planner/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make astar_path_planner/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
+visualization_msgs_generate_messages_nodejs/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+.PHONY : visualization_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
@@ -691,21 +586,6 @@ visualization_msgs_generate_messages_lisp: astar_path_planner/CMakeFiles/visuali
 visualization_msgs_generate_messages_lisp/fast:
 	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
 .PHONY : visualization_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_nodejs: astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-visualization_msgs_generate_messages_nodejs/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
-.PHONY : visualization_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 astar_path_planner/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
@@ -753,36 +633,6 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_eus.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_eus.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-astar_path_planner_generate_messages_eus: astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_eus.dir/rule
-
-.PHONY : astar_path_planner_generate_messages_eus
-
-# fast build rule for target.
-astar_path_planner_generate_messages_eus/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_eus.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_eus.dir/build
-.PHONY : astar_path_planner_generate_messages_eus/fast
-
-# Convenience name for target.
-astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-.PHONY : astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_eus: astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_eus
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_eus/fast:
-	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
-.PHONY : actionlib_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
 astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
 	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 .PHONY : astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
@@ -796,6 +646,21 @@ visualization_msgs_generate_messages_eus: astar_path_planner/CMakeFiles/visualiz
 visualization_msgs_generate_messages_eus/fast:
 	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make astar_path_planner/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
 .PHONY : visualization_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_cpp.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_cpp.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+astar_path_planner_generate_messages_cpp: astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_cpp.dir/rule
+
+.PHONY : astar_path_planner_generate_messages_cpp
+
+# fast build rule for target.
+astar_path_planner_generate_messages_cpp/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_cpp.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_cpp.dir/build
+.PHONY : astar_path_planner_generate_messages_cpp/fast
 
 # Convenience name for target.
 astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
@@ -843,6 +708,21 @@ visualization_msgs_generate_messages_cpp/fast:
 .PHONY : visualization_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+astar_path_planner/CMakeFiles/astar_path_planner_geneus.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_geneus.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/astar_path_planner_geneus.dir/rule
+
+# Convenience name for target.
+astar_path_planner_geneus: astar_path_planner/CMakeFiles/astar_path_planner_geneus.dir/rule
+
+.PHONY : astar_path_planner_geneus
+
+# fast build rule for target.
+astar_path_planner_geneus/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_geneus.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_geneus.dir/build
+.PHONY : astar_path_planner_geneus/fast
+
+# Convenience name for target.
 astar_path_planner/CMakeFiles/astar_path_planner_genpy.dir/rule:
 	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_genpy.dir/rule
 .PHONY : astar_path_planner/CMakeFiles/astar_path_planner_genpy.dir/rule
@@ -886,6 +766,51 @@ astar_path_planner_generate_messages: astar_path_planner/CMakeFiles/astar_path_p
 astar_path_planner_generate_messages/fast:
 	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_generate_messages.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_generate_messages.dir/build
 .PHONY : astar_path_planner_generate_messages/fast
+
+# Convenience name for target.
+astar_path_planner/CMakeFiles/astar_path_planner_gencpp.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_gencpp.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/astar_path_planner_gencpp.dir/rule
+
+# Convenience name for target.
+astar_path_planner_gencpp: astar_path_planner/CMakeFiles/astar_path_planner_gencpp.dir/rule
+
+.PHONY : astar_path_planner_gencpp
+
+# fast build rule for target.
+astar_path_planner_gencpp/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_gencpp.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_gencpp.dir/build
+.PHONY : astar_path_planner_gencpp/fast
+
+# Convenience name for target.
+astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_eus: astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make astar_path_planner/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_eus.dir/rule:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_eus.dir/rule
+.PHONY : astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+astar_path_planner_generate_messages_eus: astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_eus.dir/rule
+
+.PHONY : astar_path_planner_generate_messages_eus
+
+# fast build rule for target.
+astar_path_planner_generate_messages_eus/fast:
+	cd /home/will/Documents/UNI/2019/Spring/AdvancedRobotics/catkin_ws/build && $(MAKE) -f astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_eus.dir/build.make astar_path_planner/CMakeFiles/astar_path_planner_generate_messages_eus.dir/build
+.PHONY : astar_path_planner_generate_messages_eus/fast
 
 src/astar_path_planner.o: src/astar_path_planner.cpp.o
 
@@ -1061,55 +986,50 @@ help:
 	@echo "... astar_path_planner_generate_messages_py"
 	@echo "... install/local"
 	@echo "... astar_path_planner_gennodejs"
-	@echo "... astar_path_planner_geneus"
-	@echo "... astar_path_planner_gencpp"
-	@echo "... astar_path_planner_generate_messages_cpp"
-	@echo "... _astar_path_planner_generate_messages_check_deps_PlanPath"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... install"
-	@echo "... nav_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_eus"
+	@echo "... edit_cache"
+	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... astar_path_planner_genlisp"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... astar_path_planner_generate_messages_nodejs"
+	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... nav_msgs_generate_messages_nodejs"
 	@echo "... astar_path_planner"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... _astar_path_planner_generate_messages_check_deps_PlanPath"
+	@echo "... install"
+	@echo "... nav_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... astar_path_planner_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... edit_cache"
-	@echo "... nav_msgs_generate_messages_lisp"
-	@echo "... astar_path_planner_genlisp"
-	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... astar_path_planner_generate_messages_nodejs"
-	@echo "... nav_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_nodejs"
+	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... astar_path_planner_generate_messages_eus"
-	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... visualization_msgs_generate_messages_eus"
+	@echo "... astar_path_planner_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... visualization_msgs_generate_messages_cpp"
+	@echo "... astar_path_planner_geneus"
 	@echo "... astar_path_planner_genpy"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... astar_path_planner_generate_messages"
+	@echo "... astar_path_planner_gencpp"
+	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... astar_path_planner_generate_messages_eus"
 	@echo "... src/astar_path_planner.o"
 	@echo "... src/astar_path_planner.i"
 	@echo "... src/astar_path_planner.s"
